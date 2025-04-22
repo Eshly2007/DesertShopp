@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Blossom Bakery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f8c8dc;
+    }
+
+    header {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 28px;
+      color: #e572a3;
+    }
+
+    nav button {
+      background-color: #ff6b81;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      margin-left: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .about-section {
+      background-color: #f8c8dc;
+      padding: 50px 100px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      color: #b84d69;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #ffe5dc;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    footer b {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="data:image/jpeg;base64,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" alt="Blossom Logo" />
+      <span>Blossom Bakery</span>
+    </div>
+    <nav>
+      <button onclick="location.href='index.html'">Menu</button>
+      <button onclick="location.href='signin.html'">Sign In</button>
+      <button onclick="location.href='payment.html'">Make Payment</button>
+    </nav>
+  </header>
+    <img style="padding: 20px; margin-left: 500px; border-radius: 50px;  padding-bottom: 30px;"  src="about.jpg" alt="bidni zurag">
+    <div class="about-section">
+    <h2>About Our Bakery</h2>
+    <p>
+      Welcome to Blossom Bakery. Our bakery began as a small dream to create sweets that not only look beautiful but taste heavenly. We specialize in hand-crafted desserts, traditional pastries, and elegant cakes, made fresh every day. We believe in using only the finest ingredients and putting love into every bite. Whether it’s breakfast, a celebration, or a simple craving, Blossom Bakery is here to add a sprinkle of joy to your day.
+    </p>
+  </div>
+
+  <footer>
+    <b>Contact Us</b><br/>
+    Email: info@blossombakery.com | Phone: +123 456 7890<br/>
+    Address: 247 Bakery Street, Sweet City
+  </footer>
+</body>
+</html>
